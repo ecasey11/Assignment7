@@ -1,5 +1,11 @@
 body {
 	font-family: 'Niramit', sans-serif;
+	background-color: #ffe6ff;
+	text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
 .flex-container {
@@ -28,8 +34,11 @@ body {
 	background-repeat: no-repeat; 
 }
 
-#and:hover {
-	background-color: #0066ff;
+#and {
+	animation-name: shape-change;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	position: relative;
 }
 
 #dogs:hover {
@@ -37,3 +46,13 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat; 
 }
+
+@keyframes shape-change {
+	100% {border-radius: 100px; width: 10%; background-color: #0066ff;}
+}
+
+
+
+
+
+
