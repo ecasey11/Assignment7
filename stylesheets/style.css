@@ -1,0 +1,39 @@
+body {
+	font-family: 'Niramit', sans-serif;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flex-container div {
+	text-align: center;
+	width: 30%;
+	height: 100px;
+	margin: 10px;
+	padding: 20px;
+	border: solid;
+	border-color: #0066ff;
+	font-size: 40px;
+	background-color: #ccffff;
+	transition-property: background-color;
+	transition-duration:  2s;
+}
+
+#cats:hover {
+	background-image: url(images/cats.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+}
+
+#and:hover {
+	background-color: #0066ff;
+}
+
+#dogs:hover {
+	background-image: url(images/dogs.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+}
